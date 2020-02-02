@@ -38,39 +38,40 @@
             this.picFactory4 = new System.Windows.Forms.PictureBox();
             this.picFactory5 = new System.Windows.Forms.PictureBox();
             this.pendHumanR1C1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pendCompR1C1 = new System.Windows.Forms.PictureBox();
             this.pendHumanR2C2 = new System.Windows.Forms.PictureBox();
             this.pendHumanR2C1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pendCompR2C1 = new System.Windows.Forms.PictureBox();
+            this.pendCompR2C2 = new System.Windows.Forms.PictureBox();
             this.pendHumanR3C1 = new System.Windows.Forms.PictureBox();
             this.pendHumanR3C2 = new System.Windows.Forms.PictureBox();
             this.pendHumanR3C3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pendCompR3C1 = new System.Windows.Forms.PictureBox();
+            this.pendCompR3C2 = new System.Windows.Forms.PictureBox();
+            this.pendCompR3C3 = new System.Windows.Forms.PictureBox();
             this.pendHumanR4C1 = new System.Windows.Forms.PictureBox();
             this.pendHumanR4C2 = new System.Windows.Forms.PictureBox();
             this.pendHumanR4C3 = new System.Windows.Forms.PictureBox();
             this.pendHumanR4C4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pendCompR4C1 = new System.Windows.Forms.PictureBox();
+            this.pendCompR4C2 = new System.Windows.Forms.PictureBox();
+            this.pendCompR4C4 = new System.Windows.Forms.PictureBox();
+            this.pendCompR4C3 = new System.Windows.Forms.PictureBox();
             this.pendHumanR5C1 = new System.Windows.Forms.PictureBox();
             this.pendHumanR5C2 = new System.Windows.Forms.PictureBox();
             this.pendHumanR5C4 = new System.Windows.Forms.PictureBox();
             this.pendHumanR5C3 = new System.Windows.Forms.PictureBox();
             this.pendHumanR5C5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pendCompR5C5 = new System.Windows.Forms.PictureBox();
+            this.pendCompR5C1 = new System.Windows.Forms.PictureBox();
+            this.pendCompR5C2 = new System.Windows.Forms.PictureBox();
+            this.pendCompR5C4 = new System.Windows.Forms.PictureBox();
+            this.pendCompR5C3 = new System.Windows.Forms.PictureBox();
             this.humanPanel = new System.Windows.Forms.Panel();
             this.computerPanel = new System.Windows.Forms.Panel();
             this.computerName = new System.Windows.Forms.Label();
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            this.picHuman00Fake = new System.Windows.Forms.PictureBox();
+            this.picComp00Fake = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picHumanBoard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCompBoard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFactory1)).BeginInit();
@@ -79,37 +80,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFactory4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFactory5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR1C1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR1C1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR2C2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR2C1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR2C1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR2C2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR3C1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR3C2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR3C3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR3C1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR3C2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR3C3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C3)).BeginInit();
             this.humanPanel.SuspendLayout();
             this.computerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHuman00Fake)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComp00Fake)).BeginInit();
             this.SuspendLayout();
             // 
             // humanName
@@ -211,16 +214,16 @@
             this.pendHumanR1C1.TabIndex = 1;
             this.pendHumanR1C1.TabStop = false;
             // 
-            // pictureBox1
+            // pendCompR1C1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(866, 468);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.pendCompR1C1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR1C1.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR1C1.Location = new System.Drawing.Point(866, 468);
+            this.pendCompR1C1.Name = "pendCompR1C1";
+            this.pendCompR1C1.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR1C1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR1C1.TabIndex = 5;
+            this.pendCompR1C1.TabStop = false;
             // 
             // pendHumanR2C2
             // 
@@ -244,32 +247,32 @@
             this.pendHumanR2C1.TabIndex = 7;
             this.pendHumanR2C1.TabStop = false;
             // 
-            // pictureBox4
+            // pendCompR2C1
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Location = new System.Drawing.Point(866, 513);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.pendCompR2C1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR2C1.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR2C1.Location = new System.Drawing.Point(866, 513);
+            this.pendCompR2C1.Name = "pendCompR2C1";
+            this.pendCompR2C1.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR2C1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR2C1.TabIndex = 9;
+            this.pendCompR2C1.TabStop = false;
             // 
-            // pictureBox5
+            // pendCompR2C2
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(820, 513);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
+            this.pendCompR2C2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR2C2.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR2C2.Location = new System.Drawing.Point(820, 513);
+            this.pendCompR2C2.Name = "pendCompR2C2";
+            this.pendCompR2C2.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR2C2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR2C2.TabIndex = 8;
+            this.pendCompR2C2.TabStop = false;
             // 
             // pendHumanR3C1
             // 
             this.pendHumanR3C1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pendHumanR3C1.BackColor = System.Drawing.Color.Blue;
+            this.pendHumanR3C1.BackColor = System.Drawing.Color.Transparent;
             this.pendHumanR3C1.Location = new System.Drawing.Point(219, 556);
             this.pendHumanR3C1.Name = "pendHumanR3C1";
             this.pendHumanR3C1.Size = new System.Drawing.Size(42, 42);
@@ -299,38 +302,38 @@
             this.pendHumanR3C3.TabIndex = 6;
             this.pendHumanR3C3.TabStop = false;
             // 
-            // pictureBox9
+            // pendCompR3C1
             // 
-            this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Location = new System.Drawing.Point(866, 557);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 14;
-            this.pictureBox9.TabStop = false;
+            this.pendCompR3C1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR3C1.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR3C1.Location = new System.Drawing.Point(866, 557);
+            this.pendCompR3C1.Name = "pendCompR3C1";
+            this.pendCompR3C1.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR3C1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR3C1.TabIndex = 14;
+            this.pendCompR3C1.TabStop = false;
             // 
-            // pictureBox10
+            // pendCompR3C2
             // 
-            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Location = new System.Drawing.Point(820, 557);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 13;
-            this.pictureBox10.TabStop = false;
+            this.pendCompR3C2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR3C2.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR3C2.Location = new System.Drawing.Point(820, 557);
+            this.pendCompR3C2.Name = "pendCompR3C2";
+            this.pendCompR3C2.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR3C2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR3C2.TabIndex = 13;
+            this.pendCompR3C2.TabStop = false;
             // 
-            // pictureBox11
+            // pendCompR3C3
             // 
-            this.pictureBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Location = new System.Drawing.Point(774, 557);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 12;
-            this.pictureBox11.TabStop = false;
+            this.pendCompR3C3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR3C3.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR3C3.Location = new System.Drawing.Point(774, 557);
+            this.pendCompR3C3.Name = "pendCompR3C3";
+            this.pendCompR3C3.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR3C3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR3C3.TabIndex = 12;
+            this.pendCompR3C3.TabStop = false;
             // 
             // pendHumanR4C1
             // 
@@ -376,49 +379,49 @@
             this.pendHumanR4C4.TabIndex = 15;
             this.pendHumanR4C4.TabStop = false;
             // 
-            // pictureBox16
+            // pendCompR4C1
             // 
-            this.pictureBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox16.Location = new System.Drawing.Point(866, 601);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 21;
-            this.pictureBox16.TabStop = false;
+            this.pendCompR4C1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR4C1.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR4C1.Location = new System.Drawing.Point(866, 601);
+            this.pendCompR4C1.Name = "pendCompR4C1";
+            this.pendCompR4C1.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR4C1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR4C1.TabIndex = 21;
+            this.pendCompR4C1.TabStop = false;
             // 
-            // pictureBox17
+            // pendCompR4C2
             // 
-            this.pictureBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox17.Location = new System.Drawing.Point(820, 601);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 20;
-            this.pictureBox17.TabStop = false;
+            this.pendCompR4C2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR4C2.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR4C2.Location = new System.Drawing.Point(820, 601);
+            this.pendCompR4C2.Name = "pendCompR4C2";
+            this.pendCompR4C2.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR4C2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR4C2.TabIndex = 20;
+            this.pendCompR4C2.TabStop = false;
             // 
-            // pictureBox18
+            // pendCompR4C4
             // 
-            this.pictureBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox18.Location = new System.Drawing.Point(728, 601);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 18;
-            this.pictureBox18.TabStop = false;
+            this.pendCompR4C4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR4C4.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR4C4.Location = new System.Drawing.Point(728, 601);
+            this.pendCompR4C4.Name = "pendCompR4C4";
+            this.pendCompR4C4.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR4C4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR4C4.TabIndex = 18;
+            this.pendCompR4C4.TabStop = false;
             // 
-            // pictureBox19
+            // pendCompR4C3
             // 
-            this.pictureBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox19.Location = new System.Drawing.Point(774, 601);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 19;
-            this.pictureBox19.TabStop = false;
+            this.pendCompR4C3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR4C3.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR4C3.Location = new System.Drawing.Point(774, 601);
+            this.pendCompR4C3.Name = "pendCompR4C3";
+            this.pendCompR4C3.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR4C3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR4C3.TabIndex = 19;
+            this.pendCompR4C3.TabStop = false;
             // 
             // pendHumanR5C1
             // 
@@ -475,60 +478,60 @@
             this.pendHumanR5C5.TabIndex = 26;
             this.pendHumanR5C5.TabStop = false;
             // 
-            // pictureBox25
+            // pendCompR5C5
             // 
-            this.pictureBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox25.Location = new System.Drawing.Point(682, 645);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 31;
-            this.pictureBox25.TabStop = false;
+            this.pendCompR5C5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR5C5.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR5C5.Location = new System.Drawing.Point(682, 645);
+            this.pendCompR5C5.Name = "pendCompR5C5";
+            this.pendCompR5C5.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR5C5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR5C5.TabIndex = 31;
+            this.pendCompR5C5.TabStop = false;
             // 
-            // pictureBox26
+            // pendCompR5C1
             // 
-            this.pictureBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox26.Location = new System.Drawing.Point(866, 645);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 30;
-            this.pictureBox26.TabStop = false;
+            this.pendCompR5C1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR5C1.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR5C1.Location = new System.Drawing.Point(866, 645);
+            this.pendCompR5C1.Name = "pendCompR5C1";
+            this.pendCompR5C1.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR5C1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR5C1.TabIndex = 30;
+            this.pendCompR5C1.TabStop = false;
             // 
-            // pictureBox27
+            // pendCompR5C2
             // 
-            this.pictureBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox27.Location = new System.Drawing.Point(820, 645);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 29;
-            this.pictureBox27.TabStop = false;
+            this.pendCompR5C2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR5C2.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR5C2.Location = new System.Drawing.Point(820, 645);
+            this.pendCompR5C2.Name = "pendCompR5C2";
+            this.pendCompR5C2.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR5C2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR5C2.TabIndex = 29;
+            this.pendCompR5C2.TabStop = false;
             // 
-            // pictureBox28
+            // pendCompR5C4
             // 
-            this.pictureBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox28.Location = new System.Drawing.Point(728, 645);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 27;
-            this.pictureBox28.TabStop = false;
+            this.pendCompR5C4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR5C4.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR5C4.Location = new System.Drawing.Point(728, 645);
+            this.pendCompR5C4.Name = "pendCompR5C4";
+            this.pendCompR5C4.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR5C4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR5C4.TabIndex = 27;
+            this.pendCompR5C4.TabStop = false;
             // 
-            // pictureBox29
+            // pendCompR5C3
             // 
-            this.pictureBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox29.Location = new System.Drawing.Point(774, 645);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 28;
-            this.pictureBox29.TabStop = false;
+            this.pendCompR5C3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pendCompR5C3.BackColor = System.Drawing.Color.Transparent;
+            this.pendCompR5C3.Location = new System.Drawing.Point(774, 645);
+            this.pendCompR5C3.Name = "pendCompR5C3";
+            this.pendCompR5C3.Size = new System.Drawing.Size(42, 42);
+            this.pendCompR5C3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pendCompR5C3.TabIndex = 28;
+            this.pendCompR5C3.TabStop = false;
             // 
             // humanPanel
             // 
@@ -559,12 +562,29 @@
             this.computerName.TabIndex = 0;
             this.computerName.Text = "Computer";
             // 
-            // propertyGrid1
+            // picHuman00Fake
             // 
-            this.propertyGrid1.Location = new System.Drawing.Point(679, 213);
-            this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(220, 473);
-            this.propertyGrid1.TabIndex = 34;
+            this.picHuman00Fake.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.picHuman00Fake.BackColor = System.Drawing.Color.Transparent;
+            this.picHuman00Fake.Location = new System.Drawing.Point(288, 469);
+            this.picHuman00Fake.Name = "picHuman00Fake";
+            this.picHuman00Fake.Size = new System.Drawing.Size(42, 42);
+            this.picHuman00Fake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHuman00Fake.TabIndex = 34;
+            this.picHuman00Fake.TabStop = false;
+            this.picHuman00Fake.Visible = false;
+            // 
+            // picComp00Fake
+            // 
+            this.picComp00Fake.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.picComp00Fake.BackColor = System.Drawing.Color.Transparent;
+            this.picComp00Fake.Location = new System.Drawing.Point(934, 469);
+            this.picComp00Fake.Name = "picComp00Fake";
+            this.picComp00Fake.Size = new System.Drawing.Size(42, 42);
+            this.picComp00Fake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picComp00Fake.TabIndex = 35;
+            this.picComp00Fake.TabStop = false;
+            this.picComp00Fake.Visible = false;
             // 
             // MainForm
             // 
@@ -572,38 +592,39 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1270, 721);
-            this.Controls.Add(this.propertyGrid1);
+            this.Controls.Add(this.picComp00Fake);
+            this.Controls.Add(this.picHuman00Fake);
             this.Controls.Add(this.computerPanel);
             this.Controls.Add(this.humanPanel);
-            this.Controls.Add(this.pictureBox25);
-            this.Controls.Add(this.pictureBox26);
-            this.Controls.Add(this.pictureBox27);
-            this.Controls.Add(this.pictureBox28);
-            this.Controls.Add(this.pictureBox29);
+            this.Controls.Add(this.pendCompR5C5);
+            this.Controls.Add(this.pendCompR5C1);
+            this.Controls.Add(this.pendCompR5C2);
+            this.Controls.Add(this.pendCompR5C4);
+            this.Controls.Add(this.pendCompR5C3);
             this.Controls.Add(this.pendHumanR5C5);
             this.Controls.Add(this.pendHumanR5C1);
             this.Controls.Add(this.pendHumanR5C2);
             this.Controls.Add(this.pendHumanR5C4);
             this.Controls.Add(this.pendHumanR5C3);
-            this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.pictureBox17);
-            this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.pictureBox19);
+            this.Controls.Add(this.pendCompR4C1);
+            this.Controls.Add(this.pendCompR4C2);
+            this.Controls.Add(this.pendCompR4C4);
+            this.Controls.Add(this.pendCompR4C3);
             this.Controls.Add(this.pendHumanR4C1);
             this.Controls.Add(this.pendHumanR4C2);
             this.Controls.Add(this.pendHumanR4C4);
             this.Controls.Add(this.pendHumanR4C3);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pendCompR3C1);
+            this.Controls.Add(this.pendCompR3C2);
+            this.Controls.Add(this.pendCompR3C3);
             this.Controls.Add(this.pendHumanR3C1);
             this.Controls.Add(this.pendHumanR3C2);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pendCompR2C1);
+            this.Controls.Add(this.pendCompR2C2);
             this.Controls.Add(this.pendHumanR2C1);
             this.Controls.Add(this.pendHumanR3C3);
             this.Controls.Add(this.pendHumanR2C2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pendCompR1C1);
             this.Controls.Add(this.picFactory5);
             this.Controls.Add(this.picFactory4);
             this.Controls.Add(this.picFactory3);
@@ -625,39 +646,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFactory4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFactory5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR1C1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR1C1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR2C2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR2C1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR2C1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR2C2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR3C1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR3C2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR3C3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR3C1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR3C2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR3C3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR4C4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR4C3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pendHumanR5C5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pendCompR5C3)).EndInit();
             this.humanPanel.ResumeLayout(false);
             this.humanPanel.PerformLayout();
             this.computerPanel.ResumeLayout(false);
             this.computerPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHuman00Fake)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComp00Fake)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -673,39 +696,40 @@
         private System.Windows.Forms.PictureBox picFactory4;
         private System.Windows.Forms.PictureBox picFactory5;
         private System.Windows.Forms.PictureBox pendHumanR1C1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pendCompR1C1;
         private System.Windows.Forms.PictureBox pendHumanR2C2;
         private System.Windows.Forms.PictureBox pendHumanR2C1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pendCompR2C1;
+        private System.Windows.Forms.PictureBox pendCompR2C2;
         private System.Windows.Forms.PictureBox pendHumanR3C1;
         private System.Windows.Forms.PictureBox pendHumanR3C2;
         private System.Windows.Forms.PictureBox pendHumanR3C3;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pendCompR3C1;
+        private System.Windows.Forms.PictureBox pendCompR3C2;
+        private System.Windows.Forms.PictureBox pendCompR3C3;
         private System.Windows.Forms.PictureBox pendHumanR4C1;
         private System.Windows.Forms.PictureBox pendHumanR4C2;
         private System.Windows.Forms.PictureBox pendHumanR4C3;
         private System.Windows.Forms.PictureBox pendHumanR4C4;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pendCompR4C1;
+        private System.Windows.Forms.PictureBox pendCompR4C2;
+        private System.Windows.Forms.PictureBox pendCompR4C4;
+        private System.Windows.Forms.PictureBox pendCompR4C3;
         private System.Windows.Forms.PictureBox pendHumanR5C1;
         private System.Windows.Forms.PictureBox pendHumanR5C2;
         private System.Windows.Forms.PictureBox pendHumanR5C4;
         private System.Windows.Forms.PictureBox pendHumanR5C3;
         private System.Windows.Forms.PictureBox pendHumanR5C5;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.PictureBox pictureBox27;
-        private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox pendCompR5C5;
+        private System.Windows.Forms.PictureBox pendCompR5C1;
+        private System.Windows.Forms.PictureBox pendCompR5C2;
+        private System.Windows.Forms.PictureBox pendCompR5C4;
+        private System.Windows.Forms.PictureBox pendCompR5C3;
         private System.Windows.Forms.Panel humanPanel;
         private System.Windows.Forms.Panel computerPanel;
         private System.Windows.Forms.Label computerName;
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
+        private System.Windows.Forms.PictureBox picHuman00Fake;
+        private System.Windows.Forms.PictureBox picComp00Fake;
     }
 }
 

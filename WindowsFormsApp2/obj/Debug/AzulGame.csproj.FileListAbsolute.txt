@@ -7,3 +7,12 @@ C:\Users\duv\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AzulGame.c
 C:\Users\duv\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AzulGame.exe
 C:\Users\duv\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\AzulGame.pdb
 C:\Users\duv\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.MainForm.resources
+D:\dev\projects\Azul\WindowsFormsApp2\bin\Debug\AzulGame.exe.config
+D:\dev\projects\Azul\WindowsFormsApp2\bin\Debug\AzulGame.exe
+D:\dev\projects\Azul\WindowsFormsApp2\bin\Debug\AzulGame.pdb
+D:\dev\projects\Azul\WindowsFormsApp2\obj\Debug\AzulGame.csprojAssemblyReference.cache
+D:\dev\projects\Azul\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.MainForm.resources
+D:\dev\projects\Azul\WindowsFormsApp2\obj\Debug\AzulGame.Properties.Resources.resources
+D:\dev\projects\Azul\WindowsFormsApp2\obj\Debug\AzulGame.csproj.GenerateResource.cache
+D:\dev\projects\Azul\WindowsFormsApp2\obj\Debug\AzulGame.exe
+D:\dev\projects\Azul\WindowsFormsApp2\obj\Debug\AzulGame.pdb
