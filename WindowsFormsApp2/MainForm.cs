@@ -28,6 +28,11 @@ namespace WindowsFormsApp2
         //
         PictureBox[,] doneHumanRows = new PictureBox[5,5];
         PictureBox[,] doneCompRows = new PictureBox[5,5];
+        //
+        PictureBox[] factories;
+        PictureBox[,,] factoryTiles = new PictureBox[5, 2, 2];
+        //
+        TileBag tileBag;
 
         public MainForm()
         {
@@ -52,7 +57,7 @@ namespace WindowsFormsApp2
                 foreach (var picbox in row)
                 {
                     picHumanBoard.Controls.Add(picbox);
-                    picbox.Location = new Point(picbox.Location.X -picHumanBoard.Location.X, picbox.Location.Y -picHumanBoard.Location.Y);
+                    picbox.Location = new Point(picbox.Location.X - picHumanBoard.Location.X, picbox.Location.Y - picHumanBoard.Location.Y);
                 }
             }
             foreach (var row in pendCompRows)
@@ -75,7 +80,6 @@ namespace WindowsFormsApp2
                     var cellPicBox = new PictureBox();
                     cellPicBox.Size = picComp00Fake.Size;
                     cellPicBox.Visible = true;
-                    //cellPicBox.Image = AzulGame.Properties.Resources.CyanTile;
                     cellPicBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     cellPicBox.BackColor = Color.Transparent;
                     cellPicBox.Location = new Point(compTopLeft.X + (35 * col), compTopLeft.Y + (35 * row));
@@ -86,7 +90,6 @@ namespace WindowsFormsApp2
                     cellPicBox = new PictureBox();
                     cellPicBox.Size = picComp00Fake.Size;
                     cellPicBox.Visible = true;
-                    //cellPicBox.Image = AzulGame.Properties.Resources.CyanTile;
                     cellPicBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     cellPicBox.BackColor = Color.Transparent;
                     cellPicBox.Location = new Point(humanTopLeft.X + (35 * col), humanTopLeft.Y + (35 * row));
@@ -95,12 +98,110 @@ namespace WindowsFormsApp2
                 }
             }
 
+            factories = new PictureBox[] { picFactory1, picFactory2, picFactory3, picFactory4, picFactory5 };
+            for (int factoryIndex = 0; factoryIndex < factories.Length; factoryIndex++)
+            {
+                var factory = factories[factoryIndex];
+                for (int row = 0; row < 2; ++row)
+                {
+                    for (int col = 0; col < 2; ++col)
+                    {
+                        var factoryTilePicBox = new PictureBox();
+                        factoryTilePicBox.Size = picComp00Fake.Size;
+                        factoryTilePicBox.Visible = true;
+                        factoryTilePicBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                        factoryTilePicBox.BackColor = Color.Transparent;
+                        factoryTilePicBox.Location = new Point(32 + (35 * col), 32 + (35 * row));
+                        factory.Controls.Add(factoryTilePicBox);
+                        factoryTiles[factoryIndex, col, row] = factoryTilePicBox;
+                    }
+                }
+            }
+
             //AzulGame.Properties.Resources.BlackTile;
+        }
+
+        private void SetupBoard()
+        {
+            tileBag = new TileBag();
+            for (int factoryIndex = 0; factoryIndex < factories.Length; factoryIndex++)
+            {
+                for (int row = 0; row < 2; ++row)
+                {
+                    for (int col = 0; col < 2; ++col)
+                    {
+                        var placedTile = tileBag.ShuffledTiles.Pop();
+                        factoryTiles[factoryIndex, col, row].SetTile(placedTile);
+                    }
+                }
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            SetupBoard();
         }
+    }
+
+    static class Helpers
+    {
+        public static void SetTile(this PictureBox picbox, TileKind kind)
+        {
+            picbox.Tag = kind;
+            picbox.Image = GetTileImage(kind);
+        }
+
+        public static TileKind GetTile(this PictureBox picbox)
+        {
+            if (picbox.Tag == null)
+            {
+                return TileKind.None;
+            }
+            return (TileKind)picbox.Tag;
+        }
+
+        private static Image GetTileImage(TileKind inputKind)
+        {
+            if (inputKind == TileKind.Black)
+                return AzulGame.Properties.Resources.BlackTile;
+            else if (inputKind == TileKind.Blue)
+                return AzulGame.Properties.Resources.BlueTile;
+            else if (inputKind == TileKind.Cyan)
+                return AzulGame.Properties.Resources.CyanTile;
+            else if (inputKind == TileKind.Red)
+                return AzulGame.Properties.Resources.RedTile;
+            else if (inputKind == TileKind.Yellow)
+                return AzulGame.Properties.Resources.YellowTile;
+            throw new NotImplementedException();
+        }
+    }
+
+    class TileBag
+    {
+        public Stack<TileKind> ShuffledTiles;
+        public TileBag()
+        {
+            List<TileKind> tiles = new List<TileKind>();
+            for (int i = 0; i < 20; i++)
+            {
+                tiles.Add(TileKind.Black);
+                tiles.Add(TileKind.Blue);
+                tiles.Add(TileKind.Cyan);
+                tiles.Add(TileKind.Yellow);
+                tiles.Add(TileKind.Red);
+            }
+            ShuffledTiles = new Stack<TileKind>(tiles.OrderBy(x => Guid.NewGuid()).ToList());
+        }
+    }
+
+    enum TileKind
+    {
+        None,
+        Black,
+        Blue,
+        Cyan,
+        Red,
+        Yellow,
+        FirstMove,
     }
 }
