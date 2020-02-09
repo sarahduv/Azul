@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AzulGame;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -130,12 +131,41 @@ namespace WindowsFormsApp2
                 {
                     for (int col = 0; col < 2; ++col)
                     {
-                        var placedTile = tileBag.ShuffledTiles.Pop();
-                        factoryTiles[factoryIndex, col, row].SetTile(placedTile);
+                        var placedTileKind = tileBag.ShuffledTiles.Pop();
+                        var picbox = factoryTiles[factoryIndex, col, row];
+                        var tifo = new TileInfo();
+                        tifo.FactoryIndex = factoryIndex;
+                        tifo.kind = placedTileKind;
+                        tifo.picBox = picbox;
+                        picbox.Tag = tifo;
+                        picbox.Image = Helpers.GetTileImage(placedTileKind, false);
+                        picbox.MouseEnter += (sender, e) => {
+                            HighlightFactoryTiles((PictureBox)sender, true);
+                        };
+                        picbox.MouseLeave += (sender, e) => {
+                            HighlightFactoryTiles((PictureBox)sender, false);
+                        };
                     }
                 }
             }
         }
+        private void HighlightFactoryTiles(PictureBox pb, bool isHighlit)
+        {
+            var tifo = (TileInfo)pb.Tag;
+            for (int row = 0; row < 2; ++row)
+            {
+                for (int col = 0; col < 2; ++col)
+                {
+                    var factoryTile = factoryTiles[tifo.FactoryIndex, col, row];
+                    var factoryTifo = (TileInfo)factoryTile.Tag;
+                    if (factoryTifo.kind == tifo.kind)
+                    {
+                        factoryTile.Image = Helpers.GetTileImage(tifo.kind, isHighlit);
+                    }
+                }
+            }
+        }
+
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -145,10 +175,30 @@ namespace WindowsFormsApp2
 
     static class Helpers
     {
-        public static void SetTile(this PictureBox picbox, TileKind kind)
+        public static void EnableHoverFeedback(this PictureBox picbox)
         {
-            picbox.Tag = kind;
-            picbox.Image = GetTileImage(kind);
+            picbox.MouseEnter += HighlightTile;
+            picbox.MouseLeave += UnhighlightTile;
+        }
+
+        public static void DisableHoverFeedback(this PictureBox picbox)
+        {
+            picbox.MouseEnter -= HighlightTile;
+            picbox.MouseLeave -= UnhighlightTile;
+        }
+
+        private static void UnhighlightTile(object sender, EventArgs e)
+        {
+            var pb = (PictureBox)sender;
+            var tifo = (TileInfo)pb.Tag;
+            pb.Image = Helpers.GetTileImage(tifo.kind, false);
+        }
+
+        private static void HighlightTile(object sender, EventArgs e)
+        {
+            var pb = (PictureBox)sender;
+            var tifo = (TileInfo)pb.Tag;
+            pb.Image = Helpers.GetTileImage(tifo.kind, true);
         }
 
         public static TileKind GetTile(this PictureBox picbox)
@@ -160,18 +210,28 @@ namespace WindowsFormsApp2
             return (TileKind)picbox.Tag;
         }
 
-        private static Image GetTileImage(TileKind inputKind)
+        public static Image GetTileImage(TileKind inputKind, bool highlighted)
         {
             if (inputKind == TileKind.Black)
-                return AzulGame.Properties.Resources.BlackTile;
+                return highlighted 
+                    ? AzulGame.Properties.Resources.BlackTileH
+                    : AzulGame.Properties.Resources.BlackTile;
             else if (inputKind == TileKind.Blue)
-                return AzulGame.Properties.Resources.BlueTile;
+                return highlighted 
+                    ? AzulGame.Properties.Resources.BlueTileH
+                    : AzulGame.Properties.Resources.BlueTile;
             else if (inputKind == TileKind.Cyan)
-                return AzulGame.Properties.Resources.CyanTile;
+                return highlighted
+                    ? AzulGame.Properties.Resources.CyanTileH
+                    : AzulGame.Properties.Resources.CyanTile;
             else if (inputKind == TileKind.Red)
-                return AzulGame.Properties.Resources.RedTile;
+                return highlighted
+                    ? AzulGame.Properties.Resources.RedTileH
+                    : AzulGame.Properties.Resources.RedTile;
             else if (inputKind == TileKind.Yellow)
-                return AzulGame.Properties.Resources.YellowTile;
+                return highlighted
+                    ? AzulGame.Properties.Resources.YellowTileH
+                    : AzulGame.Properties.Resources.YellowTile;
             throw new NotImplementedException();
         }
     }

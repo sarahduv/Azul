@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TileInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +86,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AzulFactory.ico" />
+    <None Include="Resources\YellowTileH.png" />
+    <None Include="Resources\RedTileH.png" />
+    <None Include="Resources\CyanTileH.png" />
+    <None Include="Resources\BlueTileH.png" />
+    <None Include="Resources\BlackTileH.png" />
     <None Include="Resources\YellowTile.png" />
     <None Include="Resources\RedTile.png" />
     <None Include="Resources\CyanTile.png" />
