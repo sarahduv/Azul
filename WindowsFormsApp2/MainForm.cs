@@ -145,10 +145,40 @@ namespace WindowsFormsApp2
                         picbox.MouseLeave += (sender, e) => {
                             HighlightFactoryTiles((PictureBox)sender, false);
                         };
+                        picbox.MouseClick += SelectFactoryTiles;
                     }
                 }
             }
         }
+
+        List<PictureBox> selectedTiles = new List<PictureBox>();
+
+        private void SelectFactoryTiles(object sender, MouseEventArgs e)
+        {
+            // Remove highlight/selection from previous selected tiles
+            var prevSelectedTiles = selectedTiles.ToArray();
+            selectedTiles.Clear();
+            foreach (var tile in prevSelectedTiles)
+            {
+                HighlightFactoryTiles(tile, false);
+            }
+
+            var tifo = (TileInfo)((PictureBox)sender).Tag;
+            for (int row = 0; row < 2; ++row)
+            {
+                for (int col = 0; col < 2; ++col)
+                {
+                    var factoryTile = factoryTiles[tifo.FactoryIndex, col, row];
+                    var factoryTifo = (TileInfo)factoryTile.Tag;
+                    if (factoryTifo.kind == tifo.kind)
+                    {
+                        selectedTiles.Add(factoryTile);
+                        factoryTile.Image = factoryTile.Image.AddTint(Color.FromArgb(100, Color.Green));
+                    }
+                }
+            }
+        }
+
         private void HighlightFactoryTiles(PictureBox pb, bool isHighlit)
         {
             var tifo = (TileInfo)pb.Tag;
@@ -158,6 +188,13 @@ namespace WindowsFormsApp2
                 {
                     var factoryTile = factoryTiles[tifo.FactoryIndex, col, row];
                     var factoryTifo = (TileInfo)factoryTile.Tag;
+
+                    // Skip over selected tiles. We are not changing their image.
+                    if (selectedTiles.Contains(factoryTile))
+                    {
+                        continue;
+                    }
+
                     if (factoryTifo.kind == tifo.kind)
                     {
                         factoryTile.Image = Helpers.GetTileImage(tifo.kind, isHighlit);
@@ -210,7 +247,9 @@ namespace WindowsFormsApp2
             return (TileKind)picbox.Tag;
         }
 
-        public static Image GetTileImage(TileKind inputKind, bool highlighted)
+        public static Image GetTileImage(
+            TileKind inputKind, 
+            bool highlighted)
         {
             if (inputKind == TileKind.Black)
                 return highlighted 
@@ -233,6 +272,16 @@ namespace WindowsFormsApp2
                     ? AzulGame.Properties.Resources.YellowTileH
                     : AzulGame.Properties.Resources.YellowTile;
             throw new NotImplementedException();
+        }
+
+        public static Image AddTint(this Image img, Color clr)
+        {
+            var newImage = (Image)img.Clone();
+            var g = Graphics.FromImage(newImage);
+            g.FillRectangle(new SolidBrush(clr), 0, 0, img.Width, img.Height);
+            //g.DrawRectangle(new Pen(clr, 80), 0, 0, img.Width, img.Height);
+            g.Save();
+            return newImage;
         }
     }
 
